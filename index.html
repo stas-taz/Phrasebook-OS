@@ -796,6 +796,19 @@ window.PHRASEBOOK = {
         { ru: "У меня сильный ожог.", sr: "Imam jaku opekotinu." },
         { ru: "Нужна ли прививка от столбняка или бешенства?", sr: "Da li mi treba vakcina protiv tetanusa ili besnila?" }
       ]
+    }    ,
+    {
+      id: "hike",
+      icon: "🥾",
+      title: "В походе и в горах",
+      hint: "Вода, связь, дорога, помощь",
+      phrases: [
+        { ru: "Я заблудился, помогите выйти к дороге.", sr: "Izgubio sam se, pomozite mi da izađem na put." },
+        { ru: "Дайте, пожалуйста, воды.", sr: "Molim Vas, dajte mi vode." },
+        { ru: "Мне нужно позвонить или зарядить телефон.", sr: "Treba mi da telefoniram ili napunim telefon." },
+        { ru: "Я не могу идти дальше, нужна помощь.", sr: "Ne mogu dalje da hodam, potrebna mi je pomoć." },
+        { ru: "Где ближайшая деревня или остановка?", sr: "Gde je najbliže selo ili stanica?" }
+      ]
     }
   ]
 };
@@ -930,6 +943,13 @@ window.LANGS = {
     { en: "I was stung by an insect or jellyfish.", es: "Me picó un insecto o una medusa.", fr: "J'ai été piqué par un insecte ou une méduse.", pl: "Użądlił mnie owad lub poparzyła meduza.", de: "Ich wurde von einem Insekt gestochen oder von einer Qualle verbrannt.", el: "Με τσίμπησε έντομο ή μέδουσα.", tr: "Böcek soktu veya denizanası yaktı.", vi: "Tôi bị côn trùng đốt hoặc sứa chích.", th: "ฉันถูกแมลงต่อยหรือแมงกะพรุน", id: "Saya disengat serangga atau ubur-ubur.", zh: "我被虫子咬了或被水母蛰了。" },
     { en: "I have a severe burn.", es: "Tengo una quemadura grave.", fr: "J'ai une brûlure grave.", pl: "Mam silne oparzenie.", de: "Ich habe eine schwere Verbrennung.", el: "Έχω σοβαρό έγκαυμα.", tr: "Ciddi bir yanığım var.", vi: "Tôi bị bỏng nặng.", th: "ฉันมีแผลไหม้รุนแรง", id: "Saya mengalami luka bakar parah.", zh: "我严重烧伤/晒伤了。" },
     { en: "Do I need a tetanus or rabies shot?", es: "¿Necesito vacuna contra el tétanos o la rabia?", fr: "Ai-je besoin d'un vaccin contre le tétanos ou la rage ?", pl: "Czy potrzebuję szczepionki przeciw tężcowi lub wściekliźnie?", de: "Brauche ich eine Tetanus- oder Tollwutimpfung?", el: "Χρειάζομαι εμβόλιο τετάνου ή λύσσας;", tr: "Tetanoz veya kuduz aşısı gerekiyor mu?", vi: "Tôi có cần tiêm uốn ván hoặc dại không?", th: "ฉันต้องฉีดวัคซีนบาดทะยักหรือพิษสุนัขบ้าไหม", id: "Apakah saya perlu suntik tetanus atau rabies?", zh: "我需要打破伤风或狂犬疫苗吗？" }
+  ],
+  hike: [
+    { en: "I'm lost, please help me get to the road.", es: "Estoy perdido, ayúdeme a salir a la carretera.", fr: "Je suis perdu, aidez-moi à rejoindre la route.", pl: "Zgubiłem się, proszę pomóc mi wyjść na drogę.", de: "Ich habe mich verlaufen, helfen Sie mir zur Straße.", el: "Χάθηκα, βοηθήστε με να βγω στον δρόμο.", tr: "Kayboldum, yola çıkmama yardım edin.", vi: "Tôi bị lạc, làm ơn giúp tôi ra đường lớn.", th: "ฉันหลงทาง ช่วยพาไปที่ถนนหน่อย", id: "Saya tersesat, tolong bantu ke jalan raya.", zh: "我迷路了，请帮我走到大路上。" },
+    { en: "Please give me some water.", es: "Por favor, deme agua.", fr: "S'il vous plaît, donnez-moi de l'eau.", pl: "Proszę o trochę wody.", de: "Bitte geben Sie mir etwas Wasser.", el: "Παρακαλώ δώστε μου λίγο νερό.", tr: "Lütfen bana biraz su verin.", vi: "Làm ơn cho tôi xin ít nước.", th: "กรุณาขอน้ำดื่มหน่อย", id: "Tolong beri saya air minum.", zh: "请给我一点水。" },
+    { en: "I need to make a call or charge my phone.", es: "Necesito hacer una llamada o cargar el teléfono.", fr: "J'ai besoin d'appeler ou de charger mon téléphone.", pl: "Muszę zadzwonić lub naładować telefon.", de: "Ich muss telefonieren oder mein Handy laden.", el: "Πρέπει να τηλεφωνήσω ή να φορτίσω το κινητό μου.", tr: "Arama yapmam veya telefonumu şarj etmem gerekiyor.", vi: "Tôi cần gọi điện hoặc sạc điện thoại.", th: "ฉันต้องโทรศัพท์หรือชาร์จแบตมือถือ", id: "Saya perlu menelepon atau mengisi daya ponsel.", zh: "我需要打电话或给手机充电。" },
+    { en: "I can't walk any further, I need help.", es: "No puedo caminar más, necesito ayuda.", fr: "Je ne peux plus marcher, j'ai besoin d'aide.", pl: "Nie mogę iść dalej, potrzebuję pomocy.", de: "Ich kann nicht weitergehen, ich brauche Hilfe.", el: "Δεν μπορώ να περπατήσω άλλο, χρειάζομαι βοήθεια.", tr: "Daha fazla yürüyemiyorum, yardıma ihtiyacım var.", vi: "Tôi không thể đi tiếp được nữa, tôi cần giúp đỡ.", th: "ฉันเดินต่อไม่ไหวแล้ว ต้องการความช่วยเหลือ", id: "Saya tidak kuat berjalan lagi, butuh bantuan.", zh: "我走不动了，需要帮助。" },
+    { en: "Where is the nearest village or bus stop?", es: "¿Dónde está el pueblo o la parada más cercana?", fr: "Où est le village ou l'arrêt le plus proche ?", pl: "Gdzie jest najbliższa wieś lub przystanek?", de: "Wo ist das nächste Dorf oder die nächste Haltestelle?", el: "Πού είναι το πιο κοντινό χωριό ή η στάση;", tr: "En yakın köy veya durak nerede?", vi: "Làng hoặc trạm xe gần nhất ở đâu?", th: "หมู่บ้านหรือป้ายรถที่ใกล้ที่สุดอยู่ไหน", id: "Di mana desa atau halte terdekat?", zh: "最近的村庄或车站在哪里？" }
   ]
 };
 
@@ -994,7 +1014,8 @@ window.I18N = {
       payment: ["Оплата и страховка", "Счёт, карта, документы"],
       understand: ["Не понимаю", "Спасательные фразы"],
       police: ["Полиция и 112", "ДТП, кража, документы"],
-      bites: ["Укусы и ожоги", "Животные, насекомые, солнце"]
+      bites: ["Укусы и ожоги", "Животные, насекомые, солнце"],
+      hike: ["В походе и в горах", "Вода, связь, дорога, помощь"]
     }
   },
 
@@ -1037,7 +1058,8 @@ window.I18N = {
       payment: ["Payment and insurance", "Bill, card, documents"],
       understand: ["I don't understand", "Rescue phrases"],
       police: ["Police & 112", "Accident, theft, documents"],
-      bites: ["Bites & burns", "Animals, insects, sunburn"]
+      bites: ["Bites & burns", "Animals, insects, sunburn"],
+      hike: ["Hiking & outdoors", "Water, signal, road, help"]
     }
   },
 
@@ -1080,7 +1102,8 @@ window.I18N = {
       payment: ["Pago y seguro", "Factura, tarjeta, documentos"],
       understand: ["No entiendo", "Frases de auxilio"],
       police: ["Policía y 112", "Accidente, robo, documentos"],
-      bites: ["Mordeduras y quemaduras", "Animales, insectos, sol"]
+      bites: ["Mordeduras y quemaduras", "Animales, insectos, sol"],
+      hike: ["Senderismo y montaña", "Agua, señal, camino, ayuda"]
     }
   },
 
@@ -1123,7 +1146,8 @@ window.I18N = {
       payment: ["Paiement et assurance", "Facture, carte, documents"],
       understand: ["Je ne comprends pas", "Phrases de secours"],
       police: ["Police et 112", "Accident, vol, papiers"],
-      bites: ["Morsures et brûlures", "Animaux, insectes, soleil"]
+      bites: ["Morsures et brûlures", "Animaux, insectes, soleil"],
+      hike: ["Randonnée et montagne", "Eau, réseau, route, aide"]
     }
   },
 
@@ -1166,7 +1190,8 @@ window.I18N = {
       payment: ["Płatność i ubezpieczenie", "Rachunek, karta, dokumenty"],
       understand: ["Nie rozumiem", "Ratunkowe zwroty"],
       police: ["Policja i 112", "Wypadek, kradzież, dokumenty"],
-      bites: ["Ukąszenia i oparzenia", "Zwierzęta, owady, słońce"]
+      bites: ["Ukąszenia i oparzenia", "Zwierzęta, owady, słońce"],
+      hike: ["W górach i na szlaku", "Woda, zasięg, droga, pomoc"]
     }
   },
 
@@ -1209,7 +1234,8 @@ window.I18N = {
       payment: ["Zahlung und Versicherung", "Rechnung, Karte, Dokumente"],
       understand: ["Ich verstehe nicht", "Rettungssätze"],
       police: ["Polizei & 112", "Unfall, Diebstahl, Dokumente"],
-      bites: ["Bisse & Verbrennungen", "Tiere, Insekten, Sonne"]
+      bites: ["Bisse & Verbrennungen", "Tiere, Insekten, Sonne"],
+      hike: ["Wandern & Berge", "Wasser, Empfang, Weg, Hilfe"]
     }
   },
 
@@ -1252,7 +1278,8 @@ window.I18N = {
       payment: ["Πληρωμή και ασφάλιση", "Λογαριασμός, κάρτα, έγγραφα"],
       understand: ["Δεν καταλαβαίνω", "Φράσεις ανάγκης"],
       police: ["Αστυνομία & 112", "Ατύχημα, κλοπή, έγγραφα"],
-      bites: ["Δαγκώματα & εγκαύματα", "Ζώα, έντομα, ήλιος"]
+      bites: ["Δαγκώματα & εγκαύματα", "Ζώα, έντομα, ήλιος"],
+      hike: ["Πεζοπορία & βουνό", "Νερό, σήμα, δρόμος, βοήθεια"]
     }
   },
 
@@ -1295,7 +1322,8 @@ window.I18N = {
       payment: ["Ödeme ve sigorta", "Fatura, kart, belgeler"],
       understand: ["Anlamıyorum", "Acil ifadeler"],
       police: ["Polis ve 112", "Kaza, hırsızlık, belgeler"],
-      bites: ["Isırıklar ve yanıklar", "Hayvanlar, böcekler, güneş"]
+      bites: ["Isırıklar ve yanıklar", "Hayvanlar, böcekler, güneş"],
+      hike: ["Doğa yürüyüşü", "Su, sinyal, yol, yardım"]
     }
   },
 
@@ -1338,7 +1366,8 @@ window.I18N = {
       payment: ["Thanh toán và bảo hiểm", "Hóa đơn, thẻ, giấy tờ"],
       understand: ["Tôi không hiểu", "Câu cứu hộ"],
       police: ["Cảnh sát & 112", "Tai nạn, mất trộm, giấy tờ"],
-      bites: ["Vết cắn & bỏng", "Động vật, côn trùng, nắng"]
+      bites: ["Vết cắn & bỏng", "Động vật, côn trùng, nắng"],
+      hike: ["Đi rừng & leo núi", "Nước, sóng, đường, giúp đỡ"]
     }
   },
 
@@ -1381,7 +1410,8 @@ window.I18N = {
       payment: ["การจ่ายเงินและประกัน", "ใบเสร็จ บัตร เอกสาร"],
       understand: ["ฉันไม่เข้าใจ", "ประโยคช่วยเหลือ"],
       police: ["ตำรวจ & 112", "อุบัติเหตุ ขโมย เอกสาร"],
-      bites: ["สัตว์กัด & แผลไหม้", "สัตว์ แมลง แดดเผา"]
+      bites: ["สัตว์กัด & แผลไหม้", "สัตว์ แมลง แดดเผา"],
+      hike: ["เดินป่าและภูเขา", "น้ำ สัญญาณ ทาง ช่วยเหลือ"]
     }
   },
 
@@ -1424,7 +1454,8 @@ window.I18N = {
       payment: ["Pembayaran dan asuransi", "Tagihan, kartu, dokumen"],
       understand: ["Saya tidak mengerti", "Frasa darurat"],
       police: ["Polisi & 112", "Kecelakaan, pencurian, dokumen"],
-      bites: ["Gigitan & luka bakar", "Hewan, serangga, matahari"]
+      bites: ["Gigitan & luka bakar", "Hewan, serangga, matahari"],
+      hike: ["Mendaki & alam", "Air, sinyal, jalan, bantuan"]
     }
   },
 
@@ -1467,7 +1498,8 @@ window.I18N = {
       payment: ["付款和保险", "账单、银行卡、证件"],
       understand: ["我不明白", "应急用语"],
       police: ["警察与112", "事故、失窃、证件"],
-      bites: ["咬伤与烧伤", "动物、昆虫、晒伤"]
+      bites: ["咬伤与烧伤", "动物、昆虫、晒伤"],
+      hike: ["徒步与登山", "饮水、信号、路线、求助"]
     }
   }
 };
@@ -1587,6 +1619,13 @@ window.TRANSLIT = {
     { en: "ай воз станг бай эн инсэкт о джэлифиш", es: "мэ пико ун инсэкто о уна мэдуса", fr: "жэ этэ пикэ пар эн инсэкт у юн мэдюз", pl: "ужондлил мне овад люб попажыла мэдуза", de: "их вурдэ фон айнэм инзэкт гэштохэн одэр фон айнер квале фэрбрант", el: "мэ цимбисэ эндомо и мэдуса", tr: "бёджэк сокту вэя дэнизанасы якты", vi: "той би кон чунг дот хоак сыа тить", th: "чан тхук малэнг той ры мэнгапхрун", id: "сая дисэнгат сэрангга атау убур-убур", zh: "во бэй чунцзы яо лэ хо бэй шуйму чжэ лэ" },
     { en: "ай хэв э сивиэ бён", es: "тэнго уна кэмадура гравэ", fr: "жэ юн брюлюр грав", pl: "мам сильнэ опажэне", de: "их хабэ айнэ швэрэ фэрбрэнунг", el: "эхо соваро энгавма", tr: "джидди бир яныым вар", vi: "той би бонг нанг", th: "чан ми пхлэ май рунрэнг", id: "сая мэнгалами лука бакар парах", zh: "во яньчжун шаошан лэ" },
     { en: "ду ай нид э тэтэнэс о рэйбиз шот", es: "нэсэсито вакуна контра эль тэтанос о ля рабья", fr: "эж бэзуэн дён ваксэн контр лё тэтанос у ля раж", pl: "чы потшэбуе шчепёнки пшэчив тэнжцови люб всчеклизьне", de: "браухэ их айнэ тэтанус одэр тольвутимфунг", el: "хрэазомэ эмволио тэтану и лисас", tr: "тэтаноз вэя кудуз ашысы гэрэкиёр му", vi: "той ко кэн тием уон ван хоак зай кхонг", th: "чан тон чит вакцин баттхаяк ры пхитсунакба май", id: "апаках сая пэрлу сунтик тэтанус атау рабиэс", zh: "во сюй яо да пошанфэн хо куанцюань имяо ма" }
+  ],
+  hike: [
+    { en: "айм лост плиз хэлп ми гэт ту зэ роуд", es: "эстой пэрдидо аюдэмэ а салир а ля каррэтэра", fr: "жё сюи пэрдю эдэ-муа а рёжуандр ля рут", pl: "згубилэм сен прошэ помуц ми выйшчь на дрогэ", de: "их хабэ мих фэрлауфэн хэлфэн зи мир цур штрасэ", el: "хафика воифистэ мэ на вго стон дромо", tr: "кайболдум йола чыкмама ярдым эдин", vi: "той би лак лам он зюп той ра дыонг лон", th: "чан лонг тханг чуай пха пай тхи тханон ной", id: "сая тэрсэсат толонг банту кэ джалан рая", zh: "во милу лэ цин бан во цзоудао далу шан" },
+    { en: "плиз гив ми сам вотэ", es: "пор фавор дэмэ агуа", fr: "силь ву плэ донэ-муа дё ло", pl: "прошэ о трохэ воды", de: "битэ гэбэн зи мир этвас васэр", el: "паракало достэ му лиго нэро", tr: "лютфэн бана бираз су вэрин", vi: "лам он тё той син ит ныок", th: "кэруна кхо нам дым ной", id: "толонг бэри сая аир минум", zh: "цин гэй во идянь шуй" },
+    { en: "ай нид ту мэйк э кол о чадж май фоун", es: "нэсэсито асэр уна льямада о каргар эль тэлефоно", fr: "жэ бэзуэн даплэ у дё шарже мон тэлефон", pl: "мушэ задзвонич люб наладовач тэлефон", de: "их мус тэлефонирэн одэр майн хэнди ладэн", el: "прэпи на тилэфонисо и на фортисо то кинито му", tr: "арама япмам вэя тэлефонуму шарж этмэм гэрэкийор", vi: "той кэн гой дьен хоак сак дьен тхоай", th: "чан тон тхорасап ры чат бэт мытхы", id: "сая пэрлу мэнэлепон атау мэнгиси дая понсэл", zh: "во сюй яо да дяньхуа хо гэй шоуцзи чундянь" },
+    { en: "ай кант вок эни фёдэ ай нид хэлп", es: "но пуэдо каминар мас нэсэсито аюда", fr: "жё нё пё плю марше жэ бэзуэн дэд", pl: "не могу ишчь далэй потшэбуе помоцы", de: "их кан нихт вайтэргэен их браухэ хильфэ", el: "дэн боро на пэрпатисо ало хрэазомэ воифиа", tr: "даха фазла юрюемэёрум ярдыма ихтияджым вар", vi: "той кхонг тхэ ди тьеп дыок ныа той кэн зюп до", th: "чан дён то май вай лэу тон кан кхуам чхуай лыа", id: "сая тидак куат бэрджалан лаги бутух бантуан", zh: "во цзоу бу дун лэ сюй яо банчжу" },
+    { en: "вэа из зэ ниэрист вилидж о бас стоп", es: "дондэ эста эль пуэбло о ля парада мас сэркана", fr: "у э лё виляж у лярэ лё плю прош", pl: "гдзье ест найближша вешь люб пшистанэк", de: "во ист дас нэхстэ дорф одэр ди нэхстэ хальтэштэле", el: "пу инэ то пьо контино хорио и и стаси", tr: "эн якын кёй вэя дурак нэрэдэ", vi: "ланг хоак чам сэ ган нят о дау", th: "мубан ры пай рот тхи клай тхисут ю най", id: "ди мана дэса атау хальтэ тэрдэкат", zh: "цзуйцзинь дэ цуньчжуан хо чэчжань цзай нали" }
   ]
 };
 
@@ -1624,7 +1663,8 @@ window.situationIcon = function (id) {
     payment:    { color: "#007AFF", bg: "rgba(0,122,255,.14)", svg: '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>' },
     understand: { color: "#8E8E93", bg: "rgba(142,142,147,.15)", svg: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>' },
     police:     { color: "#007AFF", bg: "rgba(0,122,255,.14)", svg: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M12 8v4"/><path d="M12 16h.01"/>' },
-    bites:      { color: "#FF9500", bg: "rgba(255,149,0,.14)", svg: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>' }
+    bites:      { color: "#FF9500", bg: "rgba(255,149,0,.14)", svg: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>' },
+    hike:       { color: "#34C759", bg: "rgba(52,199,89,.14)", svg: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>' }
   };
   return map[id] || map.understand;
 };
@@ -1862,7 +1902,7 @@ window.MAP_QUERY = {
   }
 
   const SITUATION_TAGS = {
-    urgent:   ["emergency", "police", "injury", "bites", "allergy"],
+    urgent:   ["emergency", "police", "hike", "injury", "bites", "allergy"],
     symptoms: ["pain", "fever", "stomach", "head", "mental"],
     care:     ["pharmacy", "doctor", "dentist", "chronic", "payment"],
     special:  ["pregnancy", "child", "understand"]
