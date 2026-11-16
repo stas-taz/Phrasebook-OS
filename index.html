@@ -123,23 +123,18 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .brand-sub {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      border: 0;
-      background: none;
-      padding: 2px 6px;
-      border-radius: 8px;
-      font: inherit;
+    .brand-med-sub {
       font-size: 11.5px;
       font-weight: 500;
       color: var(--muted);
-      cursor: pointer;
+      line-height: 1.2;
     }
-    .brand-sub:active { background: var(--accent-soft); }
-    #langCode { color: var(--accent); font-weight: 600; }
+    .lang-pill {
+      gap: 4px;
+      font-size: 13px;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
 
     .tools { min-width: 84px; display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
 
@@ -522,12 +517,7 @@
       <div class="brand">
         <div class="brand-text">
           <div class="brand-title" id="appTitle">Разговорник</div>
-          <button class="brand-sub" id="langBtn" type="button" title="Выбрать язык">
-            <span class="brand-med">медицинский</span>
-            <span>·</span>
-            <span id="langCode">RU → SR</span>
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
+          <div class="brand-med-sub"><span class="brand-med">медицинский · 112</span></div>
         </div>
       </div>
       <div class="tools">
@@ -2075,6 +2065,20 @@ window.MAP_QUERY = {
         </div>
       </div>` : ""}
 
+      <div class="section-title">${esc(t("sheetTitle"))}</div>
+      <div class="ios-group">
+        <button class="setting-row" type="button" data-open-lang style="width:100%;border:0;background:transparent;color:inherit;font:inherit;cursor:pointer;text-align:left">
+          <div class="setting-left">
+            <span class="settings-icon" style="background:#007AFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+            <span class="setting-label">${esc(t("sheetTitle"))}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="setting-val">${esc(state.ui.toUpperCase())} → ${esc(state.lang.toUpperCase())}</span>
+            <svg class="chevron" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+        </button>
+      </div>
+
       <div class="section-title">${esc(t("themeTitle"))}</div>
       <div class="ios-group">
         <div class="setting-row">
@@ -2130,7 +2134,7 @@ window.MAP_QUERY = {
     if (state.tab === "situations" && state.situationId) {
       navLeft.innerHTML = `<button class="ios-back-btn" type="button" data-back><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span>${esc(t("tabSit"))}</span></button>`;
     } else {
-      navLeft.innerHTML = "";
+      navLeft.innerHTML = `<button class="icon-btn lang-pill" id="langBtn" type="button" title="${esc(t("sheetTitle"))}"><span id="langCode">${esc(state.ui.toUpperCase())} → ${esc(state.lang.toUpperCase())}</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>`;
     }
   }
 
@@ -2149,7 +2153,7 @@ window.MAP_QUERY = {
     document.querySelectorAll("[data-tab-label]").forEach((el) => { el.textContent = t(el.dataset.tabLabel); });
 
     $("#appTitle").textContent = t("app");
-    $("#langCode").textContent = state.ui.toUpperCase() + " → " + state.lang.toUpperCase();
+    const lc = $("#langCode"); if (lc) lc.textContent = state.ui.toUpperCase() + " → " + state.lang.toUpperCase();
     document.querySelector(".brand-med").textContent = t("medical");
     $("#overlayHint").textContent = t("overlayHint");
     document.documentElement.lang = state.ui;
@@ -2158,8 +2162,9 @@ window.MAP_QUERY = {
   }
 
   document.addEventListener("click", (e) => {
-    const el = e.target.closest("[data-open],[data-phrase],[data-back],[data-tab],[data-tag],[data-show-card],[data-print],#themeSwitch,#installBtn,[data-copy],#sitSearchClear");
+    const el = e.target.closest("[data-open],[data-phrase],[data-back],[data-tab],[data-tag],[data-show-card],[data-print],#themeSwitch,#installBtn,[data-copy],#sitSearchClear,#langBtn,[data-open-lang]");
     if (!el) return;
+    if (el.id === "langBtn" || el.hasAttribute("data-open-lang")) { openLangSheet(); return; }
     if (el.dataset.tag) {
       state.activeTag = el.dataset.tag;
       render(true);
@@ -2238,7 +2243,6 @@ window.MAP_QUERY = {
     state.big = !state.big; applySize(); save();
   });
 
-  $("#langBtn").addEventListener("click", openLangSheet);
   langSheet.addEventListener("click", (e) => {
     if (e.target.closest("[data-close-sheet]")) { closeLangSheet(); return; }
     const item = e.target.closest("[data-code]");
