@@ -809,6 +809,19 @@ window.PHRASEBOOK = {
         { ru: "Я не могу идти дальше, нужна помощь.", sr: "Ne mogu dalje da hodam, potrebna mi je pomoć." },
         { ru: "Где ближайшая деревня или остановка?", sr: "Gde je najbliže selo ili stanica?" }
       ]
+    }    ,
+    {
+      id: "travel",
+      icon: "⛴️",
+      title: "На воде и в полёте",
+      hint: "Укачивание, уши, помощь экипажа",
+      phrases: [
+        { ru: "Меня сильно укачивает, дайте воды или пакет.", sr: "Imam jaku mučninu od vožnje, dajte mi vodu ili kesu." },
+        { ru: "Позовите, пожалуйста, бортпроводника или экипаж.", sr: "Molim Vas, pozovite stjuardesu ili posadu." },
+        { ru: "Есть ли на борту врач или аптечка?", sr: "Da li na brodu ili u avionu ima lekar ili prva pomoć?" },
+        { ru: "У меня сильно заложило и болят уши.", sr: "Jako su mi zapušene i bole me uši." },
+        { ru: "Мне понадобится медицинская помощь по прибытии.", sr: "Trebaće mi medicinska pomoć po dolasku." }
+      ]
     }
   ]
 };
@@ -950,6 +963,13 @@ window.LANGS = {
     { en: "I need to make a call or charge my phone.", es: "Necesito hacer una llamada o cargar el teléfono.", fr: "J'ai besoin d'appeler ou de charger mon téléphone.", pl: "Muszę zadzwonić lub naładować telefon.", de: "Ich muss telefonieren oder mein Handy laden.", el: "Πρέπει να τηλεφωνήσω ή να φορτίσω το κινητό μου.", tr: "Arama yapmam veya telefonumu şarj etmem gerekiyor.", vi: "Tôi cần gọi điện hoặc sạc điện thoại.", th: "ฉันต้องโทรศัพท์หรือชาร์จแบตมือถือ", id: "Saya perlu menelepon atau mengisi daya ponsel.", zh: "我需要打电话或给手机充电。" },
     { en: "I can't walk any further, I need help.", es: "No puedo caminar más, necesito ayuda.", fr: "Je ne peux plus marcher, j'ai besoin d'aide.", pl: "Nie mogę iść dalej, potrzebuję pomocy.", de: "Ich kann nicht weitergehen, ich brauche Hilfe.", el: "Δεν μπορώ να περπατήσω άλλο, χρειάζομαι βοήθεια.", tr: "Daha fazla yürüyemiyorum, yardıma ihtiyacım var.", vi: "Tôi không thể đi tiếp được nữa, tôi cần giúp đỡ.", th: "ฉันเดินต่อไม่ไหวแล้ว ต้องการความช่วยเหลือ", id: "Saya tidak kuat berjalan lagi, butuh bantuan.", zh: "我走不动了，需要帮助。" },
     { en: "Where is the nearest village or bus stop?", es: "¿Dónde está el pueblo o la parada más cercana?", fr: "Où est le village ou l'arrêt le plus proche ?", pl: "Gdzie jest najbliższa wieś lub przystanek?", de: "Wo ist das nächste Dorf oder die nächste Haltestelle?", el: "Πού είναι το πιο κοντινό χωριό ή η στάση;", tr: "En yakın köy veya durak nerede?", vi: "Làng hoặc trạm xe gần nhất ở đâu?", th: "หมู่บ้านหรือป้ายรถที่ใกล้ที่สุดอยู่ไหน", id: "Di mana desa atau halte terdekat?", zh: "最近的村庄或车站在哪里？" }
+  ],
+  travel: [
+    { en: "I have severe motion sickness, please give me water or a bag.", es: "Estoy muy mareado, deme agua o una bolsa, por favor.", fr: "J'ai le mal des transports, donnez-moi de l'eau ou un sac.", pl: "Mam silną chorobę lokomocyjną, proszę o wodę lub woreczek.", de: "Mir ist stark übel, bitte geben Sie mir Wasser oder eine Tüte.", el: "Έχω έντονη ναυτία, δώστε μου νερό ή σακούλα.", tr: "Çok midem bulanıyor, lütfen su veya poşet verin.", vi: "Tôi bị say tàu xe nặng, làm ơn cho tôi nước hoặc túi nôn.", th: "ฉันเมาเรือ/เมาเครื่องบินมาก ขอน้ำหรือถุงหน่อย", id: "Saya mabuk perjalanan parah, minta air atau kantong.", zh: "我晕船/晕机很厉害，请给我水或呕吐袋。" },
+    { en: "Please call the flight attendant or crew.", es: "Por favor, llame a la azafata o a la tripulación.", fr: "S'il vous plaît, appelez l'hôtesse ou l'équipage.", pl: "Proszę wezwać stewardesę lub załogę.", de: "Bitte rufen Sie die Flugbegleiterin oder die Crew.", el: "Παρακαλώ καλέστε το πλήρωμα.", tr: "Lütfen kabin görevlisini veya mürettebatı çağırın.", vi: "Làm ơn gọi tiếp viên hoặc thủy thủ đoàn.", th: "กรุณาเรียกพนักงานต้อนรับหรือลูกเรือด้วย", id: "Tolong panggil pramugari atau awak kapal.", zh: "请叫乘务员或船员。" },
+    { en: "Is there a doctor or first aid kit on board?", es: "¿Hay un médico o botiquín a bordo?", fr: "Y a-t-il un médecin ou une trousse de secours à bord ?", pl: "Czy na pokładzie jest lekarz lub apteczka?", de: "Gibt es an Bord einen Arzt oder ein Erste-Hilfe-Set?", el: "Υπάρχει γιατρός ή φαρμακείο στο σκάφος;", tr: "Gemide veya uçakta doktor ya da ilk yardım çantası var mı?", vi: "Trên tàu/máy bay có bác sĩ hoặc hộp sơ cứu không?", th: "บนเรือ/เครื่องบินมีหมอหรือชุดปฐมพยาบาลไหม", id: "Apakah ada dokter atau kotak P3K di kapal/pesawat?", zh: "船上或飞机上有医生或急救箱吗？" },
+    { en: "My ears are blocked and hurt badly.", es: "Tengo los oídos taponados y me duelen mucho.", fr: "J'ai les oreilles bouchées et très mal.", pl: "Mam zatkane uszy i bardzo mnie bolą.", de: "Meine Ohren sind verstopft und tun stark weh.", el: "Βούλωσαν τα αυτιά μου και πονούν πολύ.", tr: "Kulaklarım tıkandı ve çok ağrıyor.", vi: "Tai tôi bị ù và đau rất nhiều.", th: "หูของฉันอื้อและปวดมาก", id: "Telinga saya tersumbat dan sangat sakit.", zh: "我的耳朵堵住了，疼得厉害。" },
+    { en: "I will need medical help upon arrival.", es: "Necesitaré asistencia médica al llegar.", fr: "J'aurai besoin d'une aide médicale à l'arrivée.", pl: "Będę potrzebować pomocy medycznej po przybyciu.", de: "Ich werde bei der Ankunft medizinische Hilfe brauchen.", el: "Θα χρειαστώ ιατρική βοήθεια κατά την άφιξη.", tr: "Varışta tıbbi yardıma ihtiyacım olacak.", vi: "Tôi sẽ cần hỗ trợ y tế khi đến nơi.", th: "ฉันต้องการความช่วยเหลือทางการแพทย์เมื่อถึงที่หมาย", id: "Saya akan membutuhkan bantuan medis saat tiba.", zh: "到达后我需要医疗帮助。" }
   ]
 };
 
@@ -1015,7 +1035,8 @@ window.I18N = {
       understand: ["Не понимаю", "Спасательные фразы"],
       police: ["Полиция и 112", "ДТП, кража, документы"],
       bites: ["Укусы и ожоги", "Животные, насекомые, солнце"],
-      hike: ["В походе и в горах", "Вода, связь, дорога, помощь"]
+      hike: ["В походе и в горах", "Вода, связь, дорога, помощь"],
+      travel: ["На воде и в полёте", "Укачивание, уши, помощь экипажа"]
     }
   },
 
@@ -1059,7 +1080,8 @@ window.I18N = {
       understand: ["I don't understand", "Rescue phrases"],
       police: ["Police & 112", "Accident, theft, documents"],
       bites: ["Bites & burns", "Animals, insects, sunburn"],
-      hike: ["Hiking & outdoors", "Water, signal, road, help"]
+      hike: ["Hiking & outdoors", "Water, signal, road, help"],
+      travel: ["Boat & flight", "Motion sickness, ears, crew help"]
     }
   },
 
@@ -1103,7 +1125,8 @@ window.I18N = {
       understand: ["No entiendo", "Frases de auxilio"],
       police: ["Policía y 112", "Accidente, robo, documentos"],
       bites: ["Mordeduras y quemaduras", "Animales, insectos, sol"],
-      hike: ["Senderismo y montaña", "Agua, señal, camino, ayuda"]
+      hike: ["Senderismo y montaña", "Agua, señal, camino, ayuda"],
+      travel: ["Barco y vuelo", "Mareo, oídos, ayuda de tripulación"]
     }
   },
 
@@ -1147,7 +1170,8 @@ window.I18N = {
       understand: ["Je ne comprends pas", "Phrases de secours"],
       police: ["Police et 112", "Accident, vol, papiers"],
       bites: ["Morsures et brûlures", "Animaux, insectes, soleil"],
-      hike: ["Randonnée et montagne", "Eau, réseau, route, aide"]
+      hike: ["Randonnée et montagne", "Eau, réseau, route, aide"],
+      travel: ["Bateau et vol", "Mal des transports, oreilles, équipage"]
     }
   },
 
@@ -1191,7 +1215,8 @@ window.I18N = {
       understand: ["Nie rozumiem", "Ratunkowe zwroty"],
       police: ["Policja i 112", "Wypadek, kradzież, dokumenty"],
       bites: ["Ukąszenia i oparzenia", "Zwierzęta, owady, słońce"],
-      hike: ["W górach i na szlaku", "Woda, zasięg, droga, pomoc"]
+      hike: ["W górach i na szlaku", "Woda, zasięg, droga, pomoc"],
+      travel: ["Na wodzie i w locie", "Choroba lokomocyjna, uszy, załoga"]
     }
   },
 
@@ -1235,7 +1260,8 @@ window.I18N = {
       understand: ["Ich verstehe nicht", "Rettungssätze"],
       police: ["Polizei & 112", "Unfall, Diebstahl, Dokumente"],
       bites: ["Bisse & Verbrennungen", "Tiere, Insekten, Sonne"],
-      hike: ["Wandern & Berge", "Wasser, Empfang, Weg, Hilfe"]
+      hike: ["Wandern & Berge", "Wasser, Empfang, Weg, Hilfe"],
+      travel: ["Boot & Flug", "Reiseübelkeit, Ohren, Crew-Hilfe"]
     }
   },
 
@@ -1279,7 +1305,8 @@ window.I18N = {
       understand: ["Δεν καταλαβαίνω", "Φράσεις ανάγκης"],
       police: ["Αστυνομία & 112", "Ατύχημα, κλοπή, έγγραφα"],
       bites: ["Δαγκώματα & εγκαύματα", "Ζώα, έντομα, ήλιος"],
-      hike: ["Πεζοπορία & βουνό", "Νερό, σήμα, δρόμος, βοήθεια"]
+      hike: ["Πεζοπορία & βουνό", "Νερό, σήμα, δρόμος, βοήθεια"],
+      travel: ["Πλοίο & πτήση", "Ναυτία, αυτιά, βοήθεια πληρώματος"]
     }
   },
 
@@ -1323,7 +1350,8 @@ window.I18N = {
       understand: ["Anlamıyorum", "Acil ifadeler"],
       police: ["Polis ve 112", "Kaza, hırsızlık, belgeler"],
       bites: ["Isırıklar ve yanıklar", "Hayvanlar, böcekler, güneş"],
-      hike: ["Doğa yürüyüşü", "Su, sinyal, yol, yardım"]
+      hike: ["Doğa yürüyüşü", "Su, sinyal, yol, yardım"],
+      travel: ["Deniz ve uçuş", "Mide bulantısı, kulak, ekip yardımı"]
     }
   },
 
@@ -1367,7 +1395,8 @@ window.I18N = {
       understand: ["Tôi không hiểu", "Câu cứu hộ"],
       police: ["Cảnh sát & 112", "Tai nạn, mất trộm, giấy tờ"],
       bites: ["Vết cắn & bỏng", "Động vật, côn trùng, nắng"],
-      hike: ["Đi rừng & leo núi", "Nước, sóng, đường, giúp đỡ"]
+      hike: ["Đi rừng & leo núi", "Nước, sóng, đường, giúp đỡ"],
+      travel: ["Tàu thủy & máy bay", "Say sóng, đau tai, tiếp viên"]
     }
   },
 
@@ -1411,7 +1440,8 @@ window.I18N = {
       understand: ["ฉันไม่เข้าใจ", "ประโยคช่วยเหลือ"],
       police: ["ตำรวจ & 112", "อุบัติเหตุ ขโมย เอกสาร"],
       bites: ["สัตว์กัด & แผลไหม้", "สัตว์ แมลง แดดเผา"],
-      hike: ["เดินป่าและภูเขา", "น้ำ สัญญาณ ทาง ช่วยเหลือ"]
+      hike: ["เดินป่าและภูเขา", "น้ำ สัญญาณ ทาง ช่วยเหลือ"],
+      travel: ["เรือและเที่ยวบิน", "เมาเรือ ปวดหู ลูกเรือ"]
     }
   },
 
@@ -1455,7 +1485,8 @@ window.I18N = {
       understand: ["Saya tidak mengerti", "Frasa darurat"],
       police: ["Polisi & 112", "Kecelakaan, pencurian, dokumen"],
       bites: ["Gigitan & luka bakar", "Hewan, serangga, matahari"],
-      hike: ["Mendaki & alam", "Air, sinyal, jalan, bantuan"]
+      hike: ["Mendaki & alam", "Air, sinyal, jalan, bantuan"],
+      travel: ["Kapal & pesawat", "Mabuk perjalanan, telinga, kru"]
     }
   },
 
@@ -1499,7 +1530,8 @@ window.I18N = {
       understand: ["我不明白", "应急用语"],
       police: ["警察与112", "事故、失窃、证件"],
       bites: ["咬伤与烧伤", "动物、昆虫、晒伤"],
-      hike: ["徒步与登山", "饮水、信号、路线、求助"]
+      hike: ["徒步与登山", "饮水、信号、路线、求助"],
+      travel: ["乘船与飞行", "晕船晕机、耳痛、乘务求助"]
     }
   }
 };
@@ -1626,6 +1658,13 @@ window.TRANSLIT = {
     { en: "ай нид ту мэйк э кол о чадж май фоун", es: "нэсэсито асэр уна льямада о каргар эль тэлефоно", fr: "жэ бэзуэн даплэ у дё шарже мон тэлефон", pl: "мушэ задзвонич люб наладовач тэлефон", de: "их мус тэлефонирэн одэр майн хэнди ладэн", el: "прэпи на тилэфонисо и на фортисо то кинито му", tr: "арама япмам вэя тэлефонуму шарж этмэм гэрэкийор", vi: "той кэн гой дьен хоак сак дьен тхоай", th: "чан тон тхорасап ры чат бэт мытхы", id: "сая пэрлу мэнэлепон атау мэнгиси дая понсэл", zh: "во сюй яо да дяньхуа хо гэй шоуцзи чундянь" },
     { en: "ай кант вок эни фёдэ ай нид хэлп", es: "но пуэдо каминар мас нэсэсито аюда", fr: "жё нё пё плю марше жэ бэзуэн дэд", pl: "не могу ишчь далэй потшэбуе помоцы", de: "их кан нихт вайтэргэен их браухэ хильфэ", el: "дэн боро на пэрпатисо ало хрэазомэ воифиа", tr: "даха фазла юрюемэёрум ярдыма ихтияджым вар", vi: "той кхонг тхэ ди тьеп дыок ныа той кэн зюп до", th: "чан дён то май вай лэу тон кан кхуам чхуай лыа", id: "сая тидак куат бэрджалан лаги бутух бантуан", zh: "во цзоу бу дун лэ сюй яо банчжу" },
     { en: "вэа из зэ ниэрист вилидж о бас стоп", es: "дондэ эста эль пуэбло о ля парада мас сэркана", fr: "у э лё виляж у лярэ лё плю прош", pl: "гдзье ест найближша вешь люб пшистанэк", de: "во ист дас нэхстэ дорф одэр ди нэхстэ хальтэштэле", el: "пу инэ то пьо контино хорио и и стаси", tr: "эн якын кёй вэя дурак нэрэдэ", vi: "ланг хоак чам сэ ган нят о дау", th: "мубан ры пай рот тхи клай тхисут ю най", id: "ди мана дэса атау хальтэ тэрдэкат", zh: "цзуйцзинь дэ цуньчжуан хо чэчжань цзай нали" }
+  ],
+  travel: [
+    { en: "ай хэв сивиэ моушн сикнэс плиз гив ми вотэ о э бэг", es: "эстой муй марэадо дэмэ агуа о уна больса пор фавор", fr: "жэ лё маль дэ транспор донэ-муа дё ло у эн сак", pl: "мам сильну хоробэ локомоцыйну прошэ о водэ люб ворэчэк", de: "мир ист штарк юбэль битэ гэбэн зи мир васэр одэр айнэ тютэ", el: "эхо энтони нафтиа достэ му нэро и сакула", tr: "чок мидэм буланыёр лютфэн су вэя пошэт вэрин", vi: "той би сай тау сэ нанг лам он тё той ныок хоак туй нон", th: "чан мао рыа мак кхо нам ры тхунг ной", id: "сая мабук пэрджалана парах минта аир атау кантонг", zh: "во юньчуань хэнь лихай цин гэй во шуй хо дайцзы" },
+    { en: "плиз кол зэ флайт этэндэнт о кру", es: "пор фавор льямэ а ля асафата о а ля трипуласьон", fr: "силь ву плэ аплэ лотэс у лекипаж", pl: "прошэ вэзвач стюардэсэ люб залогэ", de: "битэ руфэн зи ди флюгбэглайтэрин одэр ди крю", el: "паракало калестэ то плирома", tr: "лютфэн кабин гёрэвлисини вэя мюрэттэбаты чаирын", vi: "лам он гой тьеп вьен хоак тхуи тху доан", th: "кэруна риак пханакнган тонрап дуай", id: "толонг панггил прамугари атау авак капал", zh: "цин цзяо чэнъуюань хо чуаньюань" },
+    { en: "из зэа э доктэ о фёст эйд кит он бод", es: "ай ун мэдико о ботикин а бордо", fr: "я тиль эн мэдсэн у юн трус дё сэкур а бор", pl: "чы на покладзе ест лекаж люб аптэчка", de: "гибт эс ан борд айнэн арцт одэр айн эрстэ хильфэ зэт", el: "ипархи ятрос и фармакио сто скафос", tr: "гэмидэ вэя учакта доктор я да ильк ярдым чантасы вар мы", vi: "чэн тау ко бак си хоак хоп со кыу кхонг", th: "бон рыа ми мо ры чут патхомпхаябан май", id: "апаках ада доктер атау котак п3к ди капал", zh: "чуаньшан ю ишэн хо цзицзю сян ма" },
+    { en: "май иэз а блокт энд хёт бэдли", es: "тэнго лос оидос тапонадос и мэ дуэлен мучо", fr: "жэ ле зорэй буше э трэ маль", pl: "мам затканэ уши и бардзо мне болон", de: "майнэ орэн зинд фэрштопфт унд тун штарк вэ", el: "вулосан та афтя му кэ понун поли", tr: "кулакларым тыканды вэ чок аарыёр", vi: "тай той би у ва дау рат ньеу", th: "ху кхонг чан ы лэ пуат мак", id: "тэлинга сая тэрсумбат дан сангат сакит", zh: "во дэ эрдо дучжу лэ тэн дэ лихай" },
+    { en: "ай вил нид мэдикл хэлп эпон эрайвл", es: "нэсэситарэ асистэнсиа мэдика аль льегар", fr: "жорэ бэзуэн дюн эд мэдикаль а ляривэ", pl: "бэндэ потшэбовач помоцы мэдычнэй по пшибычу", de: "их вэрдэ бай дэр анкунфт мэдицинишэ хильфэ браухэн", el: "та хрэасто ятрики воифиа ката тин афикси", tr: "варышта тыбби ярдыма ихтияджым оладжак", vi: "той сэ кэн хо чо и тэ кхи дэн ной", th: "чан тон кан кхуам чхуай лыа тханг канпхэт мыа тхынг тхимай", id: "сая акан мэмбутухкан бантуан мэдис саат тиба", zh: "даода хоу во сюй яо иляо банчжу" }
   ]
 };
 
@@ -1664,7 +1703,8 @@ window.situationIcon = function (id) {
     understand: { color: "#8E8E93", bg: "rgba(142,142,147,.15)", svg: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>' },
     police:     { color: "#007AFF", bg: "rgba(0,122,255,.14)", svg: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M12 8v4"/><path d="M12 16h.01"/>' },
     bites:      { color: "#FF9500", bg: "rgba(255,149,0,.14)", svg: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>' },
-    hike:       { color: "#34C759", bg: "rgba(52,199,89,.14)", svg: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>' }
+    hike:       { color: "#34C759", bg: "rgba(52,199,89,.14)", svg: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>' },
+    travel:     { color: "#32ADE6", bg: "rgba(50,173,230,.14)", svg: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>' }
   };
   return map[id] || map.understand;
 };
@@ -1905,7 +1945,7 @@ window.MAP_QUERY = {
     urgent:   ["emergency", "police", "hike", "injury", "bites", "allergy"],
     symptoms: ["pain", "fever", "stomach", "head", "mental"],
     care:     ["pharmacy", "doctor", "dentist", "chronic", "payment"],
-    special:  ["pregnancy", "child", "understand"]
+    special:  ["pregnancy", "child", "travel", "understand"]
   };
 
   function tagLabels() {
